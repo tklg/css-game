@@ -134,6 +134,7 @@ code.js {
             transition: all .2s ease-in-out;
   border-width: 2px;
   border-style: solid;
+  padding-left: 30px;
 }
 
 .css-example-content:hover,
