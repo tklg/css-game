@@ -2,6 +2,7 @@
 
 
 * { text-decoration: none; list-style-type: none;}
+::selection {background: rgba(0,0,0,.25); color: #fff;}
 
 body {
   /*background-color: #F3E5AB;*/
@@ -80,6 +81,23 @@ body {
 }
 
 .css-box-goal {
+  display: none;
+  position: absolute;
+  /*margin-top: 10px !important;
+  margin-bottom: 0px !important;*/
+  padding-top: -300px !important;
+  height: auto !important;
+  width: auto !important;
+  z-index: -10 !important;
+  left: 30% !important;
+  top: 50px !important;
+  -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+}
+.css-box-title {
   margin: 20px 1%;
   background: rgba(0,0,0,0.1);
   border: rgba(0,0,0,0.05) 5px solid;
@@ -93,6 +111,21 @@ body {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+    -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+  z-index: 0;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 40px;
+}
+.css-box-title > h3 {
+  font-size: 50px;
+}
+.css-box-title:hover {
+  cursor: pointer;
+    background: rgba(0,0,0,0.2);
 }
 
 .code {
@@ -120,6 +153,9 @@ code.js {
 .css-example-container {
   width: 100%;
   text-align: center;
+  z-index: 0;
+  top: 380px;
+  position: absolute;
 }
 
 .css-example {
@@ -150,6 +186,23 @@ code.js {
   margin-right: 40px;
   margin-bottom: 20px;
   height: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  margin-left: -100px;
+  left: 50%;
+  min-width: 200px;
+  text-align: center;
+  padding: 5px 40px;
+  background: rgba(0,0,0,.1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-style: solid;
+  border-color: rgba(0,0,0,.2);
+  color: #c04000;
+  visibility: hidden;
 }
     
  	/*.menu-buttons span.btn, .menu-buttons a.btn {
