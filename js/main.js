@@ -51,7 +51,7 @@ setGoal = function() {
         "cursor":cu,
         "letter-spacing":s
     });
-    $('#goal').html(strings[Math.round(Math.random() * 24)]);
+    $('#goal').html(splashes[Math.round(Math.random() * 24)]);
 };
 
 setExampleContent = function() {
