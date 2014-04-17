@@ -8,6 +8,33 @@ var csschoice_cursor=["alias","all-scroll","cell","col-resize","copy","crosshair
 var csschoice_size = [];
 var csschoice_dims = [];
 var csschoice_margin = [];
+var splashes = [
+"As seen on TV!",
+"Awesome!",
+"100% pure!",
+"May contain nuts!",
+"Better than Prey!",
+"More polygons!",
+"Limited edition!",
+"Flashing letters!",
+"It's here!",
+"Best in class!",
+"It's finished!",
+"Excitement!",
+"Indev!",
+"Spiders everywhere!",
+"Check it out!",
+"Holy cow, man!",
+"It's a game!",
+"Reticulating splines!",
+"Yaaay!",
+"Singleplayer!",
+"Keyboard compatible!",
+"Undocumented!",
+"Exploding creepers!",
+"That's no moon!",
+"l33t!"
+];
 
 var temp_1, temp_2, temp_3, temp_4;
 
@@ -57,11 +84,7 @@ margin = function(maxVal) {
 
 	for (i = 0; i < 20; i++) {
 
-		//var a = ((Math.floor((Math.round(Math.Math.random()om())) * maxVal) + 1) / 5) * 5;
 		temp_3 = Math.round(Math.random() * maxVal) + 1;
-		//console.log(Math.round(Math.random() * maxVal) + 1);
-		//console.log("a = " + a);
-		//Math.floor((rr * maxVal) + 1) / 5)
 
 		var mg = temp_3.toString() + "px";
 	  	csschoice_margin[i] = mg;

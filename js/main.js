@@ -51,6 +51,7 @@ setGoal = function() {
         "cursor":cu,
         "letter-spacing":s
     });
+    $('#goal').html(strings[Math.round(Math.random() * 24)]);
 };
 
 setExampleContent = function() {
@@ -101,7 +102,7 @@ checkForWin();
 checkForWin = function() {
     if (right === totalQuestions || score === 1000) {
         //won
-        alert("WIN!");
+        alert("WIN! :D");
         location.reload();//reload page for now
         //show restart button here
     } else if (right + wrong === totalQuestions) {
@@ -139,5 +140,6 @@ nextLevel = function(ans) {
         buildGoal();
         setExampleContent();
         setGoal();
+
     }
 };
